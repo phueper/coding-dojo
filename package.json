@@ -1,5 +1,6 @@
 {
   "name": "coding-dojo",
+  "repository": "https://github.com/actano/coding-dojo",
   "version": "0.0.0",
   "description": "Coding Dojo",
   "scripts": {
