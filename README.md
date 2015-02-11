@@ -1,8 +1,18 @@
-- npm install
-- cp -r lib/template lib/<target>
-- a. bei Verwendung von IntelliJ IDEA
-- a. 1. neues Projekt
-- a. 2. static Web auswählen
-- a. 3. Projektverzeichnis wie oben auswählen
-- a. 4. Terminal von IntelliJ starten
-- ./test.sh lib/<target>
+## Installation
+
+```bash
+$ npm install
+$ cp -r lib/template lib/<target>
+```
+
+## Verwendung
+```bash
+$ ./test.sh lib/<target>
+```
+
+## IntelliJ Settings
+
+1. neues Projekt
+2. static Web auswählen
+3. Projektverzeichnis wie oben auswählen
+4. Terminal von IntelliJ starten
