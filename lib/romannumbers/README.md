@@ -7,10 +7,10 @@ Write a CLI that allows the user to enter a arabic number and displays the roman
 Write a CLI that allows the user to add, substract, multiply and divide roman numbers which have to be entered by the user.
 ## Prepraration and external links ##
 
-[Wikipedia](http://wikipedia.org/wiki/roman_numberals "Roman numberals")
+[Wikipedia](http://wikipedia.org/wiki/Roman_numerals "Roman numberals")
 
 Ask yourself: 
   - How should be reacted on errors?
   - Which cases would one want to test?
 
-Scope of roman numbers: I..M, only apply the simple substraction rule. limit to the standard rules => 5000 corresponds to MMMMM, 49 corresponds to XCIX
+Scope of roman numbers: I..M, only apply the simple substraction rule. limit to the standard rules => 5000 corresponds to MMMMM, 99 corresponds to XCIX
