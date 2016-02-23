@@ -3,5 +3,5 @@
 objectUnderTest = require './palindrom'
 
 describe.skip 'foo', ->
-    it 'should', >
+    it 'should', ->
         expect(true).to.be.true

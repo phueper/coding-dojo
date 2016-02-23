@@ -3,7 +3,7 @@
 objectUnderTest = require './kata'
 
 describe 'test example', ->
-    it 'should demonstrate a failing test', ->
+    it.skip 'should demonstrate a failing test', ->
         expect(true).to.be.false
     it 'should throw an exception', ->
         expect(() -> throw(new Error 'och noe' ).to.throw('och noe'))

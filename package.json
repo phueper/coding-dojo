@@ -4,15 +4,18 @@
   "version": "0.0.0",
   "description": "Coding Dojo",
   "scripts": {
-    "test": "mocha -R spec --compilers coffee:coffee-script/register **/*-test.coffee",
-    "coverage": "coffeeCoverage ./lib ./coverage && mocha -R spec --require coffee-coverage/register --reporter html-cov coverage/**/*-test.js > coverage/coverage.html && open coverage/coverage.html"
+    "test": "mocha -R spec --compilers coffee:coffee-script/register --require coffee-coverage/register-istanbul **/*-test.coffee",
+    "coverage-outdated": "coffeeCoverage ./lib ./coverage && mocha -R spec --require coffee-coverage/register --reporter html-cov coverage/**/*-test.js > coverage/coverage.html && open coverage/coverage.html",
+    "coverage": "./node_modules/.bin/istanbul report && open coverage/lcov-report/index.html"
   },
   "author": "",
   "dependencies": {
-    "coffee-coverage": "^0.4.4",
     "chai": "^1.9.1",
+    "coffee-coverage": "^1.0.1",
     "coffee-script": "^1.7.1",
+    "commander": "^2.9.0",
+    "immutable": "^3.7.4",
     "mocha": "^1.20.1",
-    "commander": "^2.6.0"
+    "istanbul": "^0.4.0"
   }
 }
