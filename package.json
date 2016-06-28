@@ -4,9 +4,10 @@
   "version": "0.0.0",
   "description": "Coding Dojo",
   "scripts": {
-    "test": "mocha -R spec --compilers coffee:coffee-script/register --require coffee-coverage/register-istanbul **/*-test.coffee",
+    "test": "mocha -R spec --compilers coffee:coffee-script/register --require coffee-coverage/register-istanbul **/*-test.coffee **/*-test.js",
     "coverage-outdated": "coffeeCoverage ./lib ./coverage && mocha -R spec --require coffee-coverage/register --reporter html-cov coverage/**/*-test.js > coverage/coverage.html && open coverage/coverage.html",
-    "coverage": "./node_modules/.bin/istanbul report && open coverage/lcov-report/index.html"
+    "coverage": "./node_modules/.bin/istanbul report && open coverage/lcov-report/index.html",
+    "lint": "eslint lib/**/*.js"
   },
   "author": "",
   "dependencies": {
@@ -14,8 +15,17 @@
     "coffee-coverage": "^1.0.1",
     "coffee-script": "^1.7.1",
     "commander": "^2.9.0",
+    "eslint": "^2.11.1",
+    "eslint-config-actano": "^1.0.1",
+    "eslint-plugin-import": "^1.8.1",
+    "eslint-plugin-jsx-a11y": "^1.2.2",
+    "eslint-plugin-react": "^5.1.1",
+    "hash_file": "^0.1.1",
     "immutable": "^3.7.4",
+    "istanbul": "^0.4.0",
+    "js-joda": "^1.1.8",
     "mocha": "^1.20.1",
-    "istanbul": "^0.4.0"
+    "tap": "^5.8.0",
+    "vows": "^0.8.1"
   }
 }
