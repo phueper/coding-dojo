@@ -1,12 +1,12 @@
 {expect} = require 'chai'
 
-objectUnderTest = require './kata'
+objectUnderTest = require './marsrover'
 
 describe 'test example', ->
     it 'should demonstrate a failing test', ->
         expect(true).to.be.false
     it 'should throw an exception', ->
-        expect(() -> throw(new Error 'och noe' ).to.throw('och noe'))
+        expect(() -> throw(new Error 'oh no' ).to.throw('oh no'))
 
 describe.skip 'test pending', ->
     it 'should demonstrate a skipped test', ->
